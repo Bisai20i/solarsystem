@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <style>
+        body{
+            background: url("Images/galaxy.gif")
+        }
+        
+        h1{
+            color: white;
+            text-decoration: underline;
+            padding: 5px;
+            
+        }
+        input ,select{
+            font-size: 25px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 2px solid red;
+            margin-bottom: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Weight Calculator for different Planets.</h1>
+        <input id="textBox" type="text" placeholder="Enter mass of the object">
+        <select name="select" id="">
+            <option value="None">--None Selected --</option>
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Venus">Venus</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Mercury">Mercury</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Pluto">Pluto</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Moon">Moon</option>
+        </select>
+        <input id="calc" onclick="calculate()" type="submit" Name="Submit" value="Calculate">
+    </header>
+    <main id="flexBox">
+        <div id="photo">
+            <img src="Images/earth.png" alt="None">
+        </div>
+        <div id="value">
+            <p style="color: white; font-size: 18px; font-weight: 400;">The weight of Object is:</p>
+        
+        </div>
+    </main>
+</center>
+<script src="logic.js"></script>
+</body>
+</html>
